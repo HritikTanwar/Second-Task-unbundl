@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: rgba(162, 240, 240, 0.642);
+    width: 100%;
+}
+.topHeader{
+    width: 100%;
+    /* background-color: seagreen; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 250px;
+}
+.topHeader .searchBar{
+    width: 20%;
+    height: 45px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.topHeader .searchBar input{
+    width: 90%;
+    height: 95%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.topHeader .searchBar input:focus{
+    outline: none;
+}
+.btmHeader{
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+    /* background-color: palegreen; */
+    display: flex;
+    padding-left: 150px;
+    gap: 80px;
+}
+.btmHeader h4{
+    font-weight: 400;
+}
+.material-symbols-outlined,h4,h1,p:hover{
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    background-color: rgb(247, 245, 245);
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.bannerImage{
+    z-index: -1;
+    width: 100%;
+    height: 60vh;
+    background: url(Images/BannerImage.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.second-form{
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    z-index: 99;
+    width: 340px;
+    height: 390px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.second-form span{
+    color: rgb(0, 34, 255);
+}
+.second-form p{
+    font-size: 24px;
+    margin-top: -25px;
+    font-weight: 600;
+    position: relative;
+    right: 35px;
+}
+.second-form #cars{
+    margin-top: -25px;
+    border-radius: 5px;
+    width: 190px;
+    height: 45px;
+    padding: 8px;
+    font-size: 16px;
+}
+.second-form #budget{
+    margin-top: -25px;
+    border-radius: 5px;
+    width: 190px;
+    height: 45px;
+    padding: 8px;
+    font-size: 16px;
+}
+#searchBtn{
+    border: none;
+    border-radius: 5px;
+    width: 190px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 34, 255);
+    cursor: pointer;
+}
+.firstPage{
+    width: 100%;
+    height: 180vh;
+    background-color: rgb(236, 236, 234);
+    text-align: center;
+}
+.container{
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 3px rgba(36,39,44,.15);
+}
+.container h3{
+    text-align: left;
+    width: 92%;
+    position: relative;
+    bottom: 70px;
+    font-size: 28px;
+}
+.container span{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    position: relative;
+    right:  245px;
+    bottom: 45px;
+    font-size: 18px;
+    gap: 90px;
+    justify-content: space-evenly;
+}
+.container span p:hover{
+    text-decoration: underline;
+}
+.cardetail{
+    width: 99%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.firtsCar{
+    /* background-color: aqua; */
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.firtsCar p{
+    width: 180px;
+    text-align: left;
+    /* background-color: blue; */
+}
+.firtsCar button{
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(0, 34, 255);
+    cursor: pointer;
+}
+.second-cardetail{
+    width: 99%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.third-cardetail{
+    width: 99%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.second-container{
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 3px rgba(36,39,44,.15);
+}
+.second-container h3{
+    text-align: left;
+    width: 92%;
+    position: relative;
+    bottom: 70px;
+    font-size: 28px;
+}
+.second-container span{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    position: relative;
+    right:  245px;
+    bottom: 45px;
+    font-size: 18px;
+    gap: 90px;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links > div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li a {
+    text-decoration: none;
+}
+.footer-copyright {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
